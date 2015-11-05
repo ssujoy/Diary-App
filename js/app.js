@@ -5,6 +5,9 @@ app.config(['$routeProvider',
 		$routeProvider.when('/home',
 			{templateUrl:'todo.html',
 			controller:'todoInputController'})
+			.when('/set-todo',
+			{templateUrl:'set-todo.html',
+			controller:'todoInputController'})
 			.when('/view',
 			{templateUrl:'todo-view.html',
 			controller:'todoViewController'})
@@ -14,7 +17,10 @@ app.config(['$routeProvider',
 	}]);
 
 app.controller('appController', function($scope, $cookies, $location){
-	//alert('IN App controller');
+	$scope.menuItemClick = function(){
+		alert($location.path());
+	}
+	
 	$scope.isLoggedIn = function(){
 		return ($cookies.get('user'));
 	}

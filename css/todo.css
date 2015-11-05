@@ -12,18 +12,47 @@
 	height:50px;
 	background-color : black;
 	color:white;
+	background: linear-gradient(to bottom right, #000000 , rgba(255, 247, 0, 0));
 }
 
-.menubar a{
+.selectedMenuItem, .selectedMenuItem:hover, .selectedMenuItem:visited{
 	display:inline-block;
 	border-right:solid thin white;
+	box-shadow: 1px 7px 12px #000000;
+	background-color: white;
+	width: 120px;
+	height: 100%;
+	text-align:center;
+	line-height: 43px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transform: rotate(9deg);
+}
+
+.menubar .menuItem{
+	display:inline-block;
 	width: 120px;
 	height: 100%;
 	text-align:center;
 	line-height: 45px;
     color: white;
     text-decoration: none;
-	
+    font-size: 14px;
+}
+
+.menubar a:hover{
+	display:inline-block;
+	border-right:solid thin white;
+	box-shadow: 1px 7px 12px #000000;
+	background-color: white;
+	width: 120px;
+	height: 100%;
+	text-align:center;
+	line-height: 43px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .mainDiv .timer-input-div{

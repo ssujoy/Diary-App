@@ -15,12 +15,30 @@ todoApp.factory('todoFactory',['$http','$cookies', '$location', function ($http,
 			if(!$cookies.get('user')){
 				$location.path('/login');
 			}
+		},
+		'setSelectedMenuItem' : function(){
+			$('.selectedMenuItem').removeClass('selectedMenuItem').addClass('menuItem');
+			switch($location.path()){
+				case '/home' : 
+					$('#home').attr('class','selectedMenuItem');
+					break;
+				case '/view' :
+					$('#view').attr('class','selectedMenuItem');
+					break;
+				case '/profile' :
+					$('#profile').attr('class','selectedMenuItem');
+					break;
+				case '/set-todo' :
+					$('#set-todo').attr('class','selectedMenuItem');
+			}
 		}
 	}
 }]);
 	
 todoApp.controller('todoInputController', function($scope,todoFactory,localStorageService){
 	todoFactory.isLoggedIn();
+	todoFactory.setSelectedMenuItem();
+
 	$scope.onDateChange = function(){
 		var date = new Date($scope.date);
 		var key = date.toLocaleDateString();
@@ -37,7 +55,8 @@ todoApp.controller('todoInputController', function($scope,todoFactory,localStora
 
 todoApp.controller('todoViewController', function($scope,todoFactory,localStorageService){
 	todoFactory.isLoggedIn();
-	
+	todoFactory.setSelectedMenuItem();
+
 	$scope.viewNote = function(){
 		var date = new Date($scope.date);
 		var key = date.toLocaleDateString();

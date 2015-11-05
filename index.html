@@ -17,10 +17,11 @@
 	<body ng-app = "app" ng-controller = "appController">
 		<div class = "mainDiv">
 			<div ng-show="isLoggedIn()" class = "menubar">
-				<a href='#/home'>Home</a>
-				<a>Profile</a>
-				<a href='#/view'>Todo List</a>
-				<a href="" ng-click="logout()">Logout</a>
+				<a class="menuItem" id="home" href='#/home'>Home</a>
+				<a class="selectedMenuItem" id="set-todo" href='#/set-todo'>Set Toto</a>
+				<a class="menuItem" id="profile">Profile</a>
+				<a class="menuItem" id="view" href='#/view'>Todo List</a>
+				<a class="menuItem" id="logout" href="" ng-click="logout()">Logout</a>
 			</div>
 			<div ng-view></div>
 			<!-- <ul class="footer">
