@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>ToDO List</title>
+		<link rel="stylesheet" type="text/css" href="css/todo.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-local-storage.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/angular-cookies.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootbox.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/todo.js"></script>
+	</head>
+	<body ng-app = "app" ng-controller = "appController">
+		<div class = "mainDiv">
+			<div ng-show="isLoggedIn()" class = "menubar">
+				<a href='#/home'>Home</a>
+				<a>Profile</a>
+				<a href='#/view'>Todo List</a>
+				<a href="" ng-click="logout()">Logout</a>
+			</div>
+			<div ng-view></div>
+			<!-- <ul class="footer">
+				<li ng-repeat = "developer in developers">{{developer}}</li>
+			</ul> -->
+		</div>
+	</body>
+</html>
+		

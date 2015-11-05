@@ -1,0 +1,178 @@
+.mainDiv{
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-image: url('../img/back.jpg');
+	background-size: 100% 100%;
+}
+
+.menubar{
+	height:50px;
+	background-color : black;
+	color:white;
+}
+
+.menubar a{
+	display:inline-block;
+	border-right:solid thin white;
+	width: 120px;
+	height: 100%;
+	text-align:center;
+	line-height: 45px;
+    color: white;
+    text-decoration: none;
+	
+}
+
+.mainDiv .timer-input-div{
+	!--border:solid thin black;
+	height:200px;
+	width:300px;
+	position :fixed;
+	top:20%;
+	left:50%;
+	margin-left:-150px;
+	background-color : rgba(255, 244, 192, 0.51);
+	box-shadow:10px 10px 5px rgba(255, 141, 0, 0.31);;
+	border-radius:10px;
+}
+
+.mainDiv .timer-input-div label{
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+	font-size:24px;
+	color:white;
+	display:inline-block;
+}
+
+.mainDiv .timer-input-div input{
+	width:100%;
+	text-align:center;
+	margin-top:20px;
+	font-size:24px;
+	display:inline-block;
+	border-radius:10px;
+}
+
+.mainDiv .timer-input-div button{
+	border:solid thin black;
+	width:100%;
+	height:35px;
+	text-align:center;
+	margin-top:30px;
+	font-size:24px;
+	display:inline-block;
+	cursor:pointer;
+}
+
+.footer{
+	border:solid thin red;
+	color:green;
+}
+
+.diary{
+	position:relative;
+	background-image:url('../img/diary.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height:400px;
+	width:800px;
+	left:50%;
+	margin-left:-400px;
+}
+
+.notePresenter{
+	height:200px;
+	width:270px;
+	position:absolute;
+	display:inline-block;
+	top:100px;
+	left:80px;
+}
+
+.dateInput{
+	position:absolute;
+	top:54px;
+	left:140px;
+	background-color: transparent;
+    border: none;
+}
+
+.diaryWrite{
+	position:relative;
+	background-image:url('../img/diary-2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height:400px;
+	width:800px;
+	left:50%;
+	margin-left:-400px;
+}
+
+.noteInput{
+	position: absolute;
+    top: 143px;
+    left: 262px;
+    height: 211px;
+    width: 483px;
+    resize: none;
+    background-color: transparent;
+    border: none;
+	color:black;
+}
+
+.loginBox{
+	height: 100%;
+	background-color: black;
+	opacity: .4;
+}
+
+.loginInputContainer{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    margin-left: -10%;
+    width: 20%;
+    height: 200px;
+    text-align: center;
+}
+
+.loginInputContainer input{
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	margin-bottom: 30px;
+	font-size: 19px;
+	padding: 0 10px;
+	color: black;
+	border: none;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.loginInputContainer button{
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	margin-bottom: 30px;
+	font-size: 19px;
+	padding: 0 10px;
+	color: black;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.loginInputContainer label{
+	color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.alertBox{
+	width:200px;
+}
