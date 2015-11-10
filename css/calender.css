@@ -1,0 +1,35 @@
+.calender{
+	display: inline-block;
+	position: relative;
+	top:0px;
+	left: 20px;
+}
+.year{
+	font-size: 120px;
+	color: white;
+}
+.month{
+	font-size: 40px;
+	color: rgb(170, 28, 0);;
+	font-weight: bold;
+	position: relative;
+	top: -80px;
+	left:40px;
+}
+.days{
+	position: relative;
+	top: -85px;
+	left: 0px;
+}
+.days th{
+	width: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(32, 72, 42);
+}
+.days td{
+	width: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+}
